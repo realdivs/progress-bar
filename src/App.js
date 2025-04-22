@@ -15,7 +15,7 @@ const ProgressBar = ({ progress }) => {
           transform: `translateX(${-(100 - animatedProgress)}%)`, //use transform for smooth transition
           color: progress < 5 ? "black" : "white",
         }}
-        role="progressbar"
+        role="progressbar"//Added for accessibility
         aria-valuenow={progress}
         aria-valuemax="100"
         aria-valuemin="0"
